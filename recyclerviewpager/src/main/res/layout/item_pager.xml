@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:layout_marginEnd="4dp"
     android:layout_marginStart="4dp"
-
     app:cardElevation="0dp"
     app:cardCornerRadius="12dp">
 
@@ -18,7 +17,7 @@
             android:id="@+id/img_header_background"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="fitXY" />
+            android:scaleType="centerCrop" />
                 <TextView
                     android:id="@+id/txt_item_header"
                     android:layout_width="250dp"
