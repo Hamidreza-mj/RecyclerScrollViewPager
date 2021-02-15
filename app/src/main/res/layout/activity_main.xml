@@ -12,10 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        app:svp_timeMillis="1000"
         app:svp_colorActiveIndicator="@color/colorPrimary"
         app:svp_colorInactiveIndicator="@color/gray"
-        app:svp_runAuto="true">
+        app:svp_runAuto="false"
+        app:svp_timeMillis="1000">
 
     </net.seifhadjhassen.recyclerviewpager.RecyclerViewPager>
 

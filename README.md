@@ -81,7 +81,11 @@ XML| JAVA| Default|Definition
 [Seif Hadjhassen - Facebook](https://www.facebook.com/seif.hajhassen)\
 [Seif Hadjhassen - Twitter](https://twitter.com/seifhadjhassen)\
 [Seif Hadjhassen - Dribbble](https://dribbble.com/seifhadjhassen)\
-[Seif Hadjhassen - Pinterest](https://www.pinterest.com/seifhadjhassen)
+[Seif Hadjhassen - Pinterest](https://www.pinterest.com/seifhadjhassen)\
+
+[edited by HamidReza-Mj] (https://github.com/Hamidreza-mj/) 
+Thanks to [Seif Hadjhassen - Github](https://github.com/seifhjh)\
+
 # License
 ```
   Copyright 2019 Seif Hadjhassen
@@ -98,3 +102,11 @@ XML| JAVA| Default|Definition
    See the License for the specific language governing permissions and
    limitations under the License.
    ```
+
+# Detected Bugs! 😓
+```
+
+    1. the recyclerViewPager.setAutoRun(true); not working!
+       this only worked in first item and not continue it, i don't know why??!!! 😐
+
+```

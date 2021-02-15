@@ -5,13 +5,12 @@ import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.support.design.widget.TabLayout;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Interpolator;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class Indicator extends RecyclerView.ItemDecoration {
     private int colorActive = 0xDE000000;
@@ -46,19 +45,17 @@ public class Indicator extends RecyclerView.ItemDecoration {
     private final Paint mPaint = new Paint();
 
     public Indicator() {
-
         mPaint.setStrokeWidth(mIndicatorStrokeWidth);
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setAntiAlias(true);
     }
 
-    public Indicator(int colorActive,int colorInactive) {
-
+    public Indicator(int colorActive, int colorInactive) {
         mPaint.setStrokeWidth(mIndicatorStrokeWidth);
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setAntiAlias(true);
-        this.colorActive=colorActive;
-        this.colorInactive=colorInactive;
+        this.colorActive = colorActive;
+        this.colorInactive = colorInactive;
     }
 
     @Override
@@ -113,24 +110,19 @@ public class Indicator extends RecyclerView.ItemDecoration {
         }
     }
 
-    private void drawHighlights(Canvas c, float indicatorStartX, float indicatorPosY,
-                                int highlightPosition, float progress) {
+    private void drawHighlights(Canvas c, float indicatorStartX, float indicatorPosY, int highlightPosition, float progress) {
         mPaint.setColor(colorActive);
 
         // width of item indicator including padding
         final float itemWidth = mIndicatorItemLength + mIndicatorItemPadding;
 
+        float highlightStart = indicatorStartX + itemWidth * highlightPosition;
         if (progress == 0F) {
             // no swipe, draw a normal indicator
-            float highlightStart = indicatorStartX + itemWidth * highlightPosition;
-
             c.drawCircle(highlightStart, indicatorPosY, mIndicatorItemLength / 2F, mPaint);
-
         } else {
-            float highlightStart = indicatorStartX + itemWidth * highlightPosition;
             // calculate partial highlight
-            float partialLength = mIndicatorItemLength * progress + mIndicatorItemPadding*progress;
-
+            float partialLength = mIndicatorItemLength * progress + mIndicatorItemPadding * progress;
             c.drawCircle(highlightStart + partialLength, indicatorPosY, mIndicatorItemLength / 2F, mPaint);
         }
     }

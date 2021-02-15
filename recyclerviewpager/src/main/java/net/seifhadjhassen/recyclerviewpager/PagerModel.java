@@ -8,16 +8,15 @@ public class PagerModel {
     String title;
     Context context;
 
-    public PagerModel(Context context){
-        this.context=context;
+    public PagerModel(Context context) {
+        this.context = context;
     }
 
-
-
-    public PagerModel(int img, String title,Context context) {
-        this.img = "android.resource://"+context.getPackageName()+"/drawable/"+img;
+    public PagerModel(int img, String title, Context context) {
+        this.img = "android.resource://" + context.getPackageName() + "/drawable/" + img;
         this.title = title;
     }
+
     public PagerModel(String img, String title) {
         this.img = img;
         this.title = title;
@@ -28,8 +27,9 @@ public class PagerModel {
     }
 
     public void setImg(int img) {
-        this.img = "android.resource://"+context.getPackageName()+"/drawable/"+img;
+        this.img = "android.resource://" + context.getPackageName() + "/drawable/" + img;
     }
+
     public void setImg(String img) {
         this.img = img;
     }
