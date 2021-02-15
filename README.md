@@ -83,7 +83,7 @@ XML| JAVA| Default|Definition
 [Seif Hadjhassen - Dribbble](https://dribbble.com/seifhadjhassen)\
 [Seif Hadjhassen - Pinterest](https://www.pinterest.com/seifhadjhassen)\
 
-edited by [HamidReza-Mj](https://github.com/Hamidreza-mj/)\ 
+edited by [HamidReza-Mj](https://github.com/Hamidreza-mj/) \n
 Thanks to [Seif Hadjhassen](https://github.com/seifhjh)
 
 # License
